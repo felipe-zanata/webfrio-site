@@ -1,0 +1,28 @@
+#pessoa {
+  flex-direction: column;
+  display: flex;
+  margin-top: 1em;
+  padding: auto;
+}
+
+#pessoa input {
+  margin-top: 0.5em;
+  padding: 0 0.5em;
+  border-radius: 5px;
+  height: 30px;
+  width: 250px;
+  border-color: #fefefe;
+}
+
+#pessoa button {
+  height: 5em;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 3em;
+  font-size: 10px;
+}
+
+#veiculo input {
+  margin-right: 5em;
+  display: flex;
+}
