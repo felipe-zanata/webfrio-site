@@ -1,28 +1,101 @@
+
 #pessoa {
   flex-direction: column;
   display: flex;
   margin-top: 1em;
   padding: auto;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  align-items: center;
 }
 
 #pessoa input {
   margin-top: 0.5em;
   padding: 0 0.5em;
-  border-radius: 5px;
-  height: 30px;
-  width: 250px;
-  border-color: #fefefe;
+  border-color: #f0eded;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+  height: 53px;
+  width: 328px;
+
+}
+
+#pessoa h1 {
+  width: 383px;
+  height: 32px;
+
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+
+  color: #616161;
+}
+
+#pessoa h2 {
+  width: 383px;
+  height: 86px;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  
+  color: #6b6b6b;
 }
 
 #pessoa button {
-  height: 5em;
+  height: 80px;
+  width: 150px;
+  font-size: 16px;
+  font-family: Quicksand;
+  line-height: 20px;
+  flex-direction: row;
   align-items: center;
+  align-content: center;
+  background: #FFFFFF;
+  border: 1px solid #E3E2E2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 27px -5px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+  
+  color: #787879;
+}
+
+#pessoa icon {
+  color:#63CCCF;
+  height: 35px;
+  width: 22px;
+}
+
+.box {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 451px;
+  width: 444px;
+  border-radius: 13px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.81) 0%, #FFFFFF 100%);
+  border: 1px solid #DEDBDB;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.2);
+}
+
+.boxButton {
+  width: 70%;
   justify-content: space-between;
-  margin-right: 3em;
-  font-size: 10px;
+  display: flex;
 }
 
 #veiculo input {
   margin-right: 5em;
   display: flex;
+  
 }

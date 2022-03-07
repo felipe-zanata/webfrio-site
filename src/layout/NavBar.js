@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './NavBar.module.css';
-import Vector from '../components/image/Vector.svg'
+import Logo from '../components/image/WebFrio.png'
+
 const NavBar = () => {
     return ( 
         <nav className={styles.navbar}>
             <div>
-                <img src={Vector} alt="Logo" />
+                <img src={Logo} alt="logo" className={styles.img} />
             </div>
             <ul className={styles.list}>
                 <li className={styles.item}>

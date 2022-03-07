@@ -12,8 +12,6 @@
     align-items: center;
 }
 
-
-
 .item2 a {
     color: #fff;
     text-decoration: none;
@@ -26,7 +24,6 @@
     align-content: center;
 }
 
-
 .item a{
     color: #000;
     text-decoration: none;
@@ -37,4 +34,11 @@
 
 .item a:hover{
    color: #ffbb33; 
+}
+
+.img {
+    height: 60px;
+    width: 160px;
+    left: 29px;
+    top: 22px;
 }
