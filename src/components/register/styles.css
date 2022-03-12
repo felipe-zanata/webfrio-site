@@ -77,8 +77,8 @@
   color: #787879;
 }
 
-#pessoa button :hover {
-  background: rgb(246, 62, 62);
+#pessoa button:hover {
+  background: rgb(189, 184, 184);
   border: 5px #63CCCF;
   box-sizing: border-box;
   border-radius: 13px;
