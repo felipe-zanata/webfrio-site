@@ -37,7 +37,8 @@ const Form = () => {
     return (
         <div id='container'>
             <div className="progressbar">
-                <ProgressBar index={page} pages={pages}/>
+            {pages.map ((p,i)=>(<ProgressBar index={page} pages={pages} nIndex={i+1} name={p}/>))}
+                
             </div>
             <div className="form_container">
                 <div className='body'>{pagesDisplay()}</div>

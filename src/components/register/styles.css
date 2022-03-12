@@ -82,7 +82,8 @@
   border: 5px #63CCCF;
   box-sizing: border-box;
   border-radius: 13px;
-  color: #787879;
+  color: #f8f8fc;
+  cursor: pointer;
 }
 
 #pessoa icon {
@@ -115,4 +116,8 @@
   margin-right: 5em;
   display: flex;
   
+}
+
+.progressbar {
+  display: flex;
 }
