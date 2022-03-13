@@ -1,38 +1,45 @@
-import React, { useMemo } from 'react';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ProgressBar.css'
 import { GiCheckMark } from 'react-icons/gi'
+import progress from '../image/progress.svg'
+import progressCheck from '../image/progressCheck.svg'
 
-const ProgressBar = ({ index, pages, nIndex, name }) => {
+const ProgressBar = ({ index, nIndex, name }) => {
 
     const [pintado, setPintado] = useState('atual');
-    // const r = pintar(index, nIndex +1)
 
-    // useEffect (() =>{
-        const pintar = (index, nIndex) => {
-            if (index === nIndex) {
-                return setPintado ('atual')
-            } else if (index < nIndex) {
-                return setPintado ('concluido')
-            } else {
-                return setPintado ('proximo')
-            }
+    useEffect(() => {
+        if (index == nIndex) {
+            return setPintado('atual')
+        } else if (index > nIndex) {
+            return setPintado('concluido')
+        } else {
+            return setPintado('proximo')
         }
-    // },[])
+    })
 
+    const RenderImg = () => {
+        if (nIndex == 6) {
+            return <></>
+        } else if (index <= nIndex) {
+            return <img src={progress} alt="logo" className='img' />
+        } else {
+            return <img src={progressCheck} alt="logo" className='img' />
+        }
+    }
 
     return (
-            <div className='container'>
+        <div className='container'>
+            <span className='union'>
                 <div className={pintado}>
                     {pintado == 'concluido' ?
-                        <GiCheckMark/>
-                        :
-                    <h1 className={pintado}   >{nIndex}</h1>
-                    }
+                        <GiCheckMark fontSize="2em" />
+                        : <h1 className={pintado} >{nIndex + 1}</h1>}
                 </div>
-                {/* <h3 className= {nIndex < index+1 ? 'concluido': ''}>{name}</h3> */}
-                <h3 className={pintado}>{name}</h3>
-            </div>
+                <RenderImg />
+            </span>
+            <h3 className={pintado}>{name}</h3>
+        </div>
     );
 }
 

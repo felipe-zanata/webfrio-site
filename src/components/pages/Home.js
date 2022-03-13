@@ -21,7 +21,7 @@ const Home = () => {
                     saiba mais
                 </button>
             </div>
-                  <img src= {figura} alt='Teste' />
+                  <img className={styles.img} src= {figura} alt='Teste' />
          </Container> 
 
 

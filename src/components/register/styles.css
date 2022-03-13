@@ -1,24 +1,6 @@
-.center {
-  flex-direction: column;
-  display: flex;
-  margin-top: 1em;
-  padding: auto;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  justify-self: center;
-  align-items: center;
-}
-
 #pessoa {
   flex-direction: column;
   display: flex;
-  margin-top: 1em;
-  padding: auto;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  justify-self: center;
   align-items: center;
 }
 
@@ -34,34 +16,31 @@
 }
 
 #pessoa h1 {
-  width: 383px;
-  height: 32px;
-
   font-family: Quicksand;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
   text-align: center;
-
+  margin-top: 10px;
   color: #616161;
 }
 
 #pessoa h2 {
-  width: 383px;
-  height: 86px;
+  width: 90%;
+  margin: 10px 5px;
   font-family: Quicksand;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  
   color: #6b6b6b;
 }
 
 #pessoa button {
   height: 80px;
+  margin: 10px 5px;
   width: 150px;
   font-size: 16px;
   font-family: Quicksand;
@@ -88,8 +67,8 @@
 
 #pessoa icon {
   color:#63CCCF;
-  height: 35px;
-  width: 22px;
+  height: 30px;
+  width: 20px;
 }
 
 .box {
@@ -97,8 +76,8 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 451px;
-  width: 444px;
+  height: 400px;
+  width: 420px;
   border-radius: 13px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.81) 0%, #FFFFFF 100%);
   border: 1px solid #DEDBDB;
@@ -107,7 +86,7 @@
 }
 
 .boxButton {
-  width: 70%;
+  width: 60%;
   justify-content: space-between;
   display: flex;
 }
@@ -116,8 +95,4 @@
   margin-right: 5em;
   display: flex;
   
-}
-
-.progressbar {
-  display: flex;
 }

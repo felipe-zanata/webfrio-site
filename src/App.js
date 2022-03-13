@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <Router>
         <NavBar />
-        <Container customClass="min-height">
+        <Container customClass="max-height">
           <Routes>
             <Route exact path="/" element={<Home />}>Home</Route>
             <Route exact path="/contato" element={<Contato />}>Contato</Route>
@@ -32,8 +32,6 @@ function App() {
           </Routes>
         </Container>
         <Footer />
-
-
       </Router>
     </div>
   );

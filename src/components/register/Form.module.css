@@ -1,4 +1,59 @@
-.form_container .h1 {
-  margin-top: 5em;
-  color: blue;
+.container {
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.form_container {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  width: 500px;
+  border-radius: 13px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.81) 0%, #FFFFFF 100%);
+  border: 1px solid #DEDBDB;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.2);
+}
+
+.progessBar {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.button {
+  font-size: 16px;
+  font-family: Quicksand;
+  flex-direction: row;
+  background: #FFFFFF;
+  border: 1px solid #E3E2E2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 27px -5px rgba(0, 0, 0, 0.25);
+  color: #787879;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 110px;
+  width: auto;
+  margin: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  height: 40px;
+  width: auto;
+  transition: background-color 0.3s 
+    cubic-bezier(.4,0,.2,1) 0ms, 
+    box-shadow .25s cubic-bezier(.4,0,.2,1) 0ms,
+    border .25s cubic-bezier(.4,0,.2,1) 0ms;
+}
+
+.button:hover {
+  background: rgb(189, 184, 184);
+  border-radius: 13px;
+  color: #f8f8fc;
 }

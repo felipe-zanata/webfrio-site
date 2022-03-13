@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './NavBar.module.css';
-import Logo from '../components/image/WebFrio.png'
+import Logo from '../components/image/logo.svg'
 
 const NavBar = () => {
     return ( 

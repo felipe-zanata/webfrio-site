@@ -1,8 +1,13 @@
 .footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  bottom: 0px;
   background-color: #fff;
   color: #eee;
-  text-align: center;
-  justify-content: center;
 }
 
 .social_list {
@@ -21,14 +26,9 @@
 .social_list svg {
   font-size: 1.5em;
   cursor: pointer;
-  margin-top: 2em;
-  color: #000;
+  color: rgb(42, 42, 42);
   justify-content: center;
   display: flex;
-}
-
-.copy_right {
-  margin-top: 2em;
 }
 
 .copy_right span {

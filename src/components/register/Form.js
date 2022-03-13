@@ -35,28 +35,25 @@ const Form = () => {
     }
 
     return (
-        <div id='container'>
-            <div className="progressbar">
-            {pages.map ((p,i)=>(<ProgressBar index={page} pages={pages} nIndex={i+1} name={p}/>))}
-                
+        <div className={styles.container}>
+            <div className={styles.progessBar}>
+                {pages.map((p, i) => (<ProgressBar index={page} nIndex={i} name={p} />))}
             </div>
-            <div className="form_container">
-                <div className='body'>{pagesDisplay()}</div>
-                <div className='footer'>
-                    <button
+            <div className={styles.form_container}>
+                <div className={styles.container}>{pagesDisplay()}</div>
+                <div >
+                    <button className={styles.button}
                         disabled={page === 0}
                         onClick={() => { setPage((currPage) => currPage - 1); }}
                     >Voltar
                     </button>
-                    <button
+                    <button className={styles.button}
                         disabled={page === pages.length - 1}
                         onClick={() => { setPage((currPage) => currPage + 1) }}
                     >Proximo
                     </button>
                 </div>
-
             </div>
-
         </div>
     );
 }
